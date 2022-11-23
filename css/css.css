@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.heart {
+    position: relative;
+    width: 400px;
+    height: 380px;
+    margin: 250px auto;
+    animation: beat .5s infinite alternate;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 32px;
+    width: 250px;
+    height: 320px;
+    background-color: red;
+    border-radius: 125px 125px 0 2px;
+    transform: rotate(-50deg);
+    box-shadow: 0 0 20px red;
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    left: 117px;
+    width: 250px;
+    height: 320px;
+    background-color: red;
+    border-radius: 125px 125px 2px 0;
+    transform: rotate(50deg);
+    box-shadow: 0 0 20px red;
+}
+
+@keyframes beat {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}

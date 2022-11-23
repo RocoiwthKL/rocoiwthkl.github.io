@@ -3,44 +3,108 @@
 	padding: 0;
 }
 
-.heart {
-    position: relative;
-    width: 400px;
-    height: 380px;
-    margin: 250px auto;
-    animation: beat .5s infinite alternate;
+body {
+	overflow: hidden;
 }
 
-.left {
-    position: absolute;
-    top: 0;
-    left: 32px;
-    width: 250px;
-    height: 320px;
-    background-color: red;
-    border-radius: 125px 125px 0 2px;
-    transform: rotate(-50deg);
-    box-shadow: 0 0 20px red;
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+	z-index: -1;
 }
 
-.right {
-    position: absolute;
-    top: 0;
-    left: 117px;
-    width: 250px;
-    height: 320px;
-    background-color: red;
-    border-radius: 125px 125px 2px 0;
-    transform: rotate(50deg);
-    box-shadow: 0 0 20px red;
+.bg div {
+	position: absolute;
+	top: 1vw;
+	left: 35%;
+	width: 32vw;
+	height: 5vw;
+	font-size: 4vw;
+	transform-origin: center;
+	animation: beat .5s infinite alternate;
 }
 
 @keyframes beat {
-    from {
-        transform: scale(1);
-    }
+	from {
+		color: red;
+		transform: scale(1);
+	}
+	to {
+		color: #d57eeb;
+		transform: scale(1.4);
+	}
+}
 
-    to {
-        transform: scale(1.2);
-    }
+.swiper {
+	display: flex;
+	width: 100vw;
+	height: 100vw;
+	padding-top: 8vw;
+	justify-content: space-evenly;
+}
+
+.swiper div img {
+	height: 35vw;
+	width: 10vw;
+	border-radius: 5vw;
+	object-fit: cover;
+}
+
+.swiper div:nth-child(1) img{
+  animation: swiper 10s infinite;
+}
+.swiper div:nth-child(2) img{
+  animation: swiper 10s 2s infinite;
+}
+.swiper div:nth-child(3) img{
+  animation: swiper 10s 4s infinite;
+}
+.swiper div:nth-child(4) img{
+  animation: swiper 10s 6s infinite;
+}
+.swiper div:nth-child(5) img{
+  animation: swiper 10s 8s infinite;
+}
+
+.swiper div:nth-child(1) img{
+  animation: swiper 10s infinite;
+}
+.swiper div:nth-child(2) img{
+  animation: swiper 10s 2s infinite;
+}
+.swiper div:nth-child(3) img{
+  animation: swiper 10s 4s infinite;
+}
+.swiper div:nth-child(4) img{
+  animation: swiper 10s 6s infinite;
+}
+.swiper div:nth-child(5) img{
+  animation: swiper 10s 8s infinite;
+}
+
+@keyframes swiper {
+  0%{
+    width: 10vw;
+    border-radius: 5vw;
+  }
+  2%{
+    width: 35vw;
+    border-radius: 5vw;
+  }
+  20%{
+    width: 35vw;
+    border-radius: 5vw;
+  }
+  22%{
+    width: 10vw;
+    border-radius: 5vw;
+  }
+  100%{
+    width: 10vw;
+    border-radius: 5vw;
+  }
 }

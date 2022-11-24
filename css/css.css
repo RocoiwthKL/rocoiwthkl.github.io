@@ -39,7 +39,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	top: 0px;
 	transition: all 1s ease;
 }
 
@@ -52,14 +51,8 @@ body {
 }
 
 .hour-xx {
-	top: 35px;
+	top: 100px;
 }
-
-.hour-x {}
-
-.minute-x {}
-
-.second-x {}
 
 .line {
 	margin: 20px;
@@ -87,49 +80,17 @@ body {
 	background: #d5ddf0;
 	box-shadow: 5px 5px 30px #a2a8b6,
 		-5px -5px 30px #ffffff;
-
 	top: 50%;
 }
 
-.circle-hour-xx {}
-
-.circle-hour-x {}
-
-.circle-minute-xx {}
-
-.time-show {
-	position: absolute;
-	right: 300px;
-	top: 100px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 .text-time {
-	font-weight: lighter;
-	color: white;
-	font-size: 100px;
-	z-index: 999;
+	display: none;
 }
 
-.time-label {
-	color: white;
-	font-size: 25px;
+.top1 {
+	top: 205px;
 }
 
-.point {
-	margin-top: 20px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	width: fit-content;
-}
-
-.point-item {
-	width: 10px;
-	height: 10px;
-	background-color: white;
-	border-radius: 50%;
-	margin-right: 20px;
+.top2 {
+	top: 340px;
 }

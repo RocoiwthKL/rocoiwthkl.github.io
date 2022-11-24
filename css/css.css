@@ -14,6 +14,7 @@ body {
 	background-color: var(--blue);
 	overflow: hidden;
 	transform: scale(1);
+	user-select: none;
 }
 
 .container {

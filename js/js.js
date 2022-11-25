@@ -29,32 +29,26 @@ function run() {
 	let hourXxText = Math.floor(nowDate.getHours() / 10);
 	let hourXText = nowDate.getHours() % 10;
 	
-	secondXTop = getDistance(5, secondXText, 0);
-	secondXxTop = getDistance(3, secondXxText, 0);
-	
-	minuteXxTop = getDistance(3, minuteXxText, 0);
-	minuteXTop = getDistance(5, minuteXText, 0);
-	
-	hourXTop = getDistance(4, hourXText, 0);
+	hourXTop = getDistance(5, hourXText, 0);
 	hourXxTop = getDistance(1, hourXxText, 5);
-	
-	secondX.style.top = secondXTop + "vw";
-	secondXx.style.top = secondXxTop + "vw";
-	
-	minuteX.style.top = minuteXTop + "vw";
-	minuteXx.style.top = minuteXxTop + "vw";
-	
 	hourX.style.top = hourXTop + "vw";
 	hourXx.style.top = hourXxTop + "vw";
+	hourXCricle.innerHTML = nowDate.getHours() % 10;
+	hourXxCricle.innerHTML = Math.floor(nowDate.getHours() / 10);
 	
-	secondXCricle.innerHTML = secondXText;
-	secondXxCricle.innerHTML = secondXxText;
-	
+	minuteXTop = getDistance(5, minuteXText, 0);
+	minuteXxTop = getDistance(3, minuteXxText, 0);
+	minuteX.style.top = minuteXTop + "vw";
+	minuteXx.style.top = minuteXxTop + "vw";
 	minuteXCricle.innerHTML = nowDate.getMinutes() % 10;
 	minuteXxCricle.innerHTML = Math.floor(nowDate.getMinutes() / 10);
 	
-	hourXCricle.innerHTML = nowDate.getHours() % 10;
-	hourXxCricle.innerHTML = Math.floor(nowDate.getHours() / 10);
+	secondXTop = getDistance(5, secondXText, 0);
+	secondXxTop = getDistance(3, secondXxText, 0);
+	secondX.style.top = secondXTop + "vw";
+	secondXx.style.top = secondXxTop + "vw";
+	secondXCricle.innerHTML = secondXText;
+	secondXxCricle.innerHTML = secondXxText;
 }
 
 run()

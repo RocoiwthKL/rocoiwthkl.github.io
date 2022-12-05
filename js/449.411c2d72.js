@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmy_app"]=self["webpackChunkmy_app"]||[]).push([[449],{7449:function(n,u,e){e.r(u),e.d(u,{default:function(){return f}});var l=function(){var n=this;n._self._c;return n._m(0)},t=[function(){var n=this,u=n._self._c;return u("div",[u("h1",[n._v("商品管理")])])}],r={name:"Mall"},a=r,s=e(1001),c=(0,s.Z)(a,l,t,!1,null,null,null),f=c.exports}}]);
+//# sourceMappingURL=449.411c2d72.js.map

@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkhoutai2"]=self["webpackChunkhoutai2"]||[]).push([[625],{7625:function(n,u,t){t.r(u),t.d(u,{default:function(){return c}});var e=function(){var n=this;n._self._c;return n._m(0)},r=[function(){var n=this,u=n._self._c;return u("div",[u("h1",[n._v("PageOne 页面")])])}],l={},i=l,s=t(1001),a=(0,s.Z)(i,e,r,!1,null,null,null),c=a.exports}}]);
+//# sourceMappingURL=625.3645beac.js.map

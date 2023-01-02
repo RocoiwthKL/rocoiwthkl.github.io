@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkhoutai2"]=self["webpackChunkhoutai2"]||[]).push([[449],{7449:function(n,u,t){t.r(u),t.d(u,{default:function(){return c}});var e=function(){var n=this;n._self._c;return n._m(0)},l=[function(){var n=this,u=n._self._c;return u("div",[u("h1",[n._v("商品管理")])])}],r={name:"Mall"},a=r,i=t(1001),s=(0,i.Z)(a,e,l,!1,null,null,null),c=s.exports}}]);
-//# sourceMappingURL=449.ce5b38d2.js.map

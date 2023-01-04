@@ -79,7 +79,7 @@ body {
   width: 100%;
   height: 100%;
   transition: filter 0.3s;
-  background-image: url(../img/2023.jpg);
+  background-image: url(https://pic.imgdb.cn/item/63b4feeebe43e0d30e91da22.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -104,8 +104,15 @@ body {
     visibility: visible;
   }
   .controls.hide:hover {
-    opacity: 1;
+    opacity: 0;
   }
+}
+.controls > .btn {
+  cursor: pointer;
+  opacity: .3;
+}
+.controls > .btn:hover {
+  opacity: .5;
 }
 
 .menu {
@@ -114,7 +121,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.42);
+  background-color: rgba(0, 0, 0, 0.3);
   transition: opacity 0.3s, visibility 0.3s;
 }
 .menu__inner-wrap {

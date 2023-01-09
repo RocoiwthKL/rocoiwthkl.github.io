@@ -416,6 +416,11 @@ if (!fullscreenEnabled()) {
 function renderApp(state) {
 	const pauseBtnIcon = `#icon-${state.paused ? 'play' : 'pause'}`;
 	const soundBtnIcon = `#icon-sound-${soundEnabledSelector() ? 'on' : 'off'}`;
+	if(pauseBtnIcon === '#icon-play' || soundBtnIcon === '#icon-sound-off') {
+		document.querySelector('iframe').setAttribute('src', 'https://music.163.com/outchain/player?type=3&id=2493280714')
+	} else {
+		document.querySelector('iframe').setAttribute('src', 'https://music.163.com/outchain/player?type=3&id=2493280714&auto=1')
+	}
 	appNodes.pauseBtnSVG.setAttribute('href', pauseBtnIcon);
 	appNodes.pauseBtnSVG.setAttribute('xlink:href', pauseBtnIcon);
 	appNodes.soundBtnSVG.setAttribute('href', soundBtnIcon);
@@ -808,6 +813,9 @@ const shellNames = Object.keys(shellTypes);
 function init() {
 	// Remove loading state
 	document.querySelector('.loading-init').remove();
+	let div = document.createElement('div')
+	document.body.appendChild(div)
+	div.innerHTML = '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="https://music.163.com/outchain/player?type=3&id=2493280714&auto=1"></iframe>'
 	appNodes.stageContainer.classList.remove('remove');
 	
 	// Populate dropdowns
